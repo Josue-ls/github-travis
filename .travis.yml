@@ -9,3 +9,15 @@ script:
   - docker run -e CI=true josuels/github-travis npm run test
 
   # - docker run -e CI=true USERNAME/docker-react npm run test
+
+deploy:
+  provider: elastickbeanstalk
+  region: "us-east-1"
+  app: "github-travis"
+  env: "Githubtravis-env"
+  bucket_name: "elasticbeanstalk-us-east-1-254707457444"
+  bucket_path: "github-travis"
+  on:
+    branch: master
+access_key_id: $AWS_ACCESS_KEY
+secret_access_key: "$AWS_SECRET_KEY"
