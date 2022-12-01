@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React, Angular and Vue
+          Learn React, Angular and Vue. Was changed on feature branch
         </a>
       </header>
     </div>
