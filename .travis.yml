@@ -11,7 +11,7 @@ script:
   # - docker run -e CI=true USERNAME/docker-react npm run test
 
 deploy:
-  provider: elastickbeanstalk
+  provider: elasticbeanstalk
   region: "us-east-1"
   app: "github-travis"
   env: "Githubtravis-env"
